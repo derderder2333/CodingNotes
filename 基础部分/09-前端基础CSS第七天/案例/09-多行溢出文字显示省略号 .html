@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>单行文本溢出显示省略号</title>
+    <style>
+        div {
+            width: 150px;
+            height: 65px;
+            background-color: pink;
+            margin: 100px auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 弹性伸缩盒子模型显示,要用下面一句命令就必须写这一句,意思是用老的弹性盒 */
+            /* 旧版，包括clome跟edge浏览器以及安卓移动端用的都是webkit内核渲染,
+            现在2026他们都是blink渲染了，但blink也会兼容旧版内容 */
+            display: -webkit-box;
+            /* 限制在一个块元素显示的文本的行数，这个是老盒子的功能所以才要写上面那一句，
+            不然不生效 */
+            -webkit-line-clamp: 3;
+            /* 设置或检索伸缩盒对象的子元素的排列方式，
+            如果不写的话，浏览器就不知道你要从纵向数行数，
+            它会默认数横排的第几个盒子 */
+            -webkit-box-orient: vertical;
+
+            /* “text-overflow: ellipsis它不是只能在一行生效，
+            它只是不会数行数，所以默认在一行生效；
+            但是如果有个人帮它数了行数，
+            那它就可以特定的那一行的末尾生效 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        啥也不说，此处省略一万字,啥也不说，此处省略一万字此处省略一万字
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>为什么需要清除浮动</title>
+    <style>
+        .box {
+            /* 清除浮动 */
+            /* 除此之外还可以用来解决父子元素margin塌陷问题 */
+            /* overflow本来是用来解决内容超出边框的问题的,
+            hidden表示超出就裁剪掉,
+            scroll表示无论怎样都有滚动条，
+            auto表示超出有滚动条，不超出没有 */
+            /* 用来解决浮动只是意外的bug */
+            /* overflow会触发BFC（Block Formatting Context，块级格式化上下文）
+            就是不让外面的进来也不让里面的出去 */
+            /* overflow: scroll; */
+            /* overflow: auto; */
+            overflow: hidden;
+            width: 800px;
+            /* height: 50px; */
+            border: 1px solid blue;
+            margin: 0 auto;
+        }
+
+        .damao {
+            float: left;
+            width: 300px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        .ermao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .footer {
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="damao">大毛</div>
+        <div class="ermao">二毛</div>
+        <div class="ermao">二毛</div>
+        <div class="ermao">二毛</div>
+        <div class="ermao">二毛</div>
+        <div class="ermao">二毛</div>
+        <div class="ermao">二毛</div>
+    </div>
+    <div class="footer"></div>
+
+</body>
+
+</html>

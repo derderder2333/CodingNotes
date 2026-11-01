@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>外边距合并-相邻块级元素垂直外边距合并</title>
+    <style>
+        .damao,
+        .ermao {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .damao {
+            margin-bottom: 100px;
+        }
+
+        .ermao {
+            margin-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 理论上上下间距应该是300，但实际上是200，因为有100合并了。
+     避免的方法是尽量不要分别设置间距，直接设置一个盒的边距为300就可以了。-->
+    <div class="damao">大毛</div>
+    <div class="ermao">二毛</div>
+    <!-- 兄弟盒子他margin的参考边是自身的一条边跟对方的一条边，
+     而对方margin是对方的一条边跟自己的一条边，
+     当他们有两条公共的边，
+     比较难做到同时消除两条，
+     所以尽量避免发生塌陷，直接只设一个margin就好 -->
+</body>
+
+</html>

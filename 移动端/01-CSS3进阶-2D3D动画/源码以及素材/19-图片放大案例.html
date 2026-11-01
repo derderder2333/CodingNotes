@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            overflow: hidden;
+            /* 这里overflow:hidden的作用是为了在图片放大后，
+            把图片溢出框外的部分截掉 */
+            float: left;
+            margin: 10px;
+        }
+
+        div img {
+            transition: all .4s;
+        }
+
+        div img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="#"><img src="media/scale.jpg" alt=""></a>
+    </div>
+    <div>
+        <a href="#"><img src="media/scale.jpg" alt=""></a>
+    </div>
+    <div>
+        <a href="#"><img src="media/scale.jpg" alt=""></a>
+    </div>
+</body>
+
+</html>

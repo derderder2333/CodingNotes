@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "62b356ac6c846f8c",
+    "type": "split",
+    "children": [
+      {
+        "id": "92cacd27196ff1af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "601bed07110eb0dc",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "移动端/01-CSS3进阶-2D3D动画/PPT/01_CSS3.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "01_CSS3"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1fc972b9cbc396c2",
+    "type": "split",
+    "children": [
+      {
+        "id": "19768b75bf795b08",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "264dd1b95265635e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "d063e42a3cb3edb5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "93e0529286140c72",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "70e2f4d0fb1e09c2",
+    "type": "split",
+    "children": [
+      {
+        "id": "23659aaef1b76802",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0d9e98c8ee84d1d3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "基础部分/09-前端基础CSS第七天/PPT/01-CSS高级技巧.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "b5bd055c9ebb3977",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "基础部分/01-前端基础第一天-HTML/笔记/第一天总结.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "853fcafe411edf56",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "0cf8a5d3e7a2fbf2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "ea26069b044c2e07",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "基础部分/01-前端基础第一天-HTML/笔记/第一天总结.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "601bed07110eb0dc",
+  "lastOpenFiles": [
+    "移动端/02-移动端流失布局/PPT/04_移动WEB开发之流式布局.pdf",
+    "移动端/01-CSS3进阶-2D3D动画/PPT/01_CSS3.pdf",
+    "基础部分/12-前端基础-PC端品优购项目（下）/PPT/01-品优购项目(上).pdf",
+    "基础部分/12-前端基础-PC端品优购项目（下）/PPT/02-品优购项目(下).pdf",
+    "基础部分/11-前端基础-PC端品优购项目/PPT/01-品优购项目(上).pdf",
+    "基础部分/10-前端基础-HTML5CSS3提高/PPT/06-HTML5 和 CSS3 的新特性.pdf",
+    "基础部分/10-前端基础-HTML5CSS3提高/笔记/day10-HTML5&CSS3提高.md",
+    "基础部分/09-前端基础CSS第七天/PPT/01-CSS高级技巧.pdf",
+    "基础部分/09-前端基础CSS第七天/案例/阿里巴巴矢量图标库的使用/fonts3/iconfont.woff2",
+    "基础部分/09-前端基础CSS第七天/案例/阿里巴巴矢量图标库的使用/fonts3/iconfont.woff",
+    "基础部分/09-前端基础CSS第七天/案例/阿里巴巴矢量图标库的使用/fonts3/iconfont.ttf",
+    "基础部分/09-前端基础CSS第七天/案例/阿里巴巴矢量图标库的使用/fonts3/iconfont.json",
+    "基础部分/08-前端基础CSS第六天/笔记/笔记-day08-前端基础CSS第六天.md",
+    "基础部分/07-前端基础CSS第五天/笔记/笔记-day07-前端基础CSS第五天.md",
+    "基础部分/06-前端基础CSS第四天/笔记/css第04天.md",
+    "基础部分/05-前端基础CSS第三天/笔记/css第03天.md",
+    "基础部分/04-前端基础CSS第二天/笔记/CSS第二天.md",
+    "基础部分/03-前端基础CSS第一天/笔记/第三天总结.md",
+    "基础部分/01-前端基础第一天-HTML/笔记/第一天总结.md",
+    "基础部分/02-前端基础第二天-HTML5基础/笔记/第二天总结.md",
+    "基础部分/01-前端基础第一天-HTML/作业/作业03锚点链接/作业效果/images/1.jpg",
+    "基础部分/01-前端基础第一天-HTML/作业/作业01链接的跳转/img/jst.jpg"
+  ]
+}

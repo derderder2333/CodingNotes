@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>外边距合并-嵌套块级元素垂直外边距塌陷</title>
+    <style>
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: purple;
+            margin-top: 50px;
+            /* border: 10px solid red; */
+            /* border: 1px solid transparent; */
+            /* padding: 10px; */
+            /* overflow: hidden; */
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 父子发生塌陷是因为父盒子的margin的参考边是自己的边以及上边框的边，
+     而子元素的参考边是自己的边跟父元素的边，
+     那么他们有一条公共边就是父元素的边，
+     margin是挂在border-edge上面的，
+     所以只要在父元素加个border或者padding,
+     父元素的参考边就变成了border的上边，
+     子元素的参考边是border的下边，
+     这样他们就没有公共边了，
+     也就不会发生塌陷了 -->
+    <!-- 当两个元素没有嵌套，他们margin是挂在border-edge上的，
+      但是当两个元素有嵌套的时候，父元素的margin对外挂在border-edge上，
+      但是子元素margin的参考边一条是它外面那一个元素的content的边上，一条是自己的border-edge，
+      当父元素border或者padding为0时，这两元素一条参考边是重合的，
+      但是当他们不为0时，这两条边就不再是公共边，所以就不会发生塌陷了-->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <!-- 当盒子具有浮动（float）、
+     固定定位（fixed）
+     或绝对定位（absolute）时，
+     不会出现外边距塌陷问题。 -->
+</body>
+
+</html>

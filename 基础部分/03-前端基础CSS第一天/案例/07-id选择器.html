@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基础选择器之id选择器</title>
+    <style>
+        /* id选择器的口诀: 样式#定义, 结构id调用, 只能调用一次, 别人切勿使用 */
+        /* id选择器的优先级只低于内联样式以及！important */
+        /* 理论上id选择器在一个页面中只能使用一次，虽然多次使用它仍然生效，但那只是系统容错 */
+        /* 一个页面指在一个html文档中只能使用一次，
+        假如这个项目有多个html文档那么，在这些文档之间的id选择器是相互独立的，
+        这意味着你可以在不同的html文档中用同一个名字命名id，
+        它仍然会在那个文档中生出对应那个文档的选择器效果 */
+      #pink {
+          color: pink;
+      }
+    
+    </style>
+</head>
+<body>
+    <div id="pink">迈克尔·杰克逊</div>
+    <div >pink老师</div>
+</body>
+</html>

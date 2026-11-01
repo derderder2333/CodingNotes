@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 过渡效果</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            /* transition: 变化的属性 花费时间 运动曲线 何时开始; */
+            /* transition: width .5s ease 0s, height .5s ease 1s; */
+            /* 如果想要写多个属性，利用逗号进行分割 */
+            /* transition: width .5s, height .5s; */
+            /* 如果想要多个属性都变化，属性写all就可以了 */
+            /* transition: height .5s ease 1s; */
+            /* 谁做过渡，给谁加 */
+            transition: all 3s;
+            /* 不小心按到了键盘上的 Insert（或 Ins、Fn+Delete），
+            VSCode 会切换为“覆盖模式（Overtype）”。
+            此时光标变粗，你输入的新字符会直接“吃掉/替换”后面的旧字符，而不是往后挤。
+            再按一次 Insert键，光标就会变回细竖线 */
+        }
+
+        div:hover {
+            width: 400px;
+            height: 200px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

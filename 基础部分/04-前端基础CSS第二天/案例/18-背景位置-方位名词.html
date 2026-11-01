@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>背景位置-方位名词</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            background-image: url(images/logo.png);
+            background-repeat: no-repeat;
+            /* 不写background-position属性,默认是左上角，也就是x轴和y轴各为0% */
+
+            /* background-position:  方位名词; */
+            /* background-position: center top; */
+
+            /* 如果是方位名词  right center 和 center right 效果是等价的 跟顺序没有关系 */
+
+            /* 只写一个元素时，另外一个默认是居中显示 */
+            background-position: right;
+
+            /* 所有方位名词：top, bottom, left, right, center,
+            还可以写具体的像素值或百分比,比如 */
+            /* background-position: 50% 50%; */
+            /* background-position: 100px 100px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

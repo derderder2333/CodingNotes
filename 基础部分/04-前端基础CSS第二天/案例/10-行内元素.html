@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>显示模式之行内元素</title>
+    <style>
+        span {
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <span>pink老师你怎么穿着品如的衣服呢</span> <strong>品如的衣服</strong>
+    <span>pink老师</span> <strong>品如的衣服</strong>
+    <!-- 除了a不可以包a之外，行内元素之间也可以相互包裹
+        除了a之外，行内元素不可以包块级元素 -->
+    <a href="http://www.baidu.com">
+        <div>这里没有问题</div>
+        <!-- <a href="#"></a> -->12
+    </a>
+</body>
+
+</html>

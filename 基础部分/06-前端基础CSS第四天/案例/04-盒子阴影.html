@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子阴影</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+
+            /* box-shadow: 10px 10px; */
+        }
+
+        /* 原先盒子没有影子,当我们鼠标经过盒子就添加阴影效果 */
+        div:hover {
+            box-shadow: 100px 100px 9px -79px rgba(216, 57, 57, 0.3);
+        }
+
+        /* box-shadow: <x偏移> <y偏移> <模糊半径> <扩散/收缩半径> <颜色>; */
+        /* 	模糊半径（blur）：越大越糊/越柔，0是实边 */
+        /* 扩散/收缩半径（spread）：正=阴影变大向外扩，负=阴影缩小向内收 */
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

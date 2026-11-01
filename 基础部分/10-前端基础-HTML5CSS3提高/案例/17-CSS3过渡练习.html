@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3过渡练习-进度条</title>
+    <style>
+        .bar {
+            width: 150px;
+            height: 15px;
+            border: 1px solid red;
+            border-radius: 7px;
+            padding: 1px;
+        }
+
+        .bar_in {
+            width: 50%;
+            height: 100%;
+            background-color: red;
+            /* 谁做过渡给谁加 */
+            transition: all .7s;
+            /* 要过渡的属性、动画持续时间、运动曲线、何时开始（延迟时间）。
+            后两个参数可以省略，通常只写前两个参数。
+            运动曲线，默认值为 ease，表示逐渐慢下来（减速过程）。
+            其他可选值包括 linear（匀速）、加速、减速或先加速后减速等。 */
+        }
+
+        .bar:hover .bar_in {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bar">
+        <div class="bar_in"></div>
+    </div>
+</body>
+
+</html>

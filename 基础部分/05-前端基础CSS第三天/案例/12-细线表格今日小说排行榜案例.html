@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>今日小说排行榜</title>
+    <style>
+        /* 直接在table标签中设置border也能达到同样的效果，
+        但那个能设置的样式较少并且沿用的是旧的渲染规则，
+        还是建议用css设置表格边框*/
+
+        /* 标签中的border默认包含了内部网格和最外面的边框 */
+
+        /* 而css里面， border会指定在某一个元素下，
+        如果是整个表格的，那border只会在最外面有；
+        如果想要里面有，就需要在里面单元格上也设置border */
+        table {
+            width: 500px;
+            height: 249px;
+        }
+
+        th,
+        td {
+            height: 35px;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid pink;
+            /* 合并相邻的边框 */
+            border-collapse: collapse;
+            font-size: 14px;
+            text-align: center;
+            /* 虽然没有设置行间距,
+            但在表格中默认垂直居中,
+            是因为表格自带一个vertical-align属性,
+            默认值是middle，除此之外还有top跟bottom*/
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center" cellspacing="0">
+        <!-- thead和th是不一样的，
+     <thead>是圈出“哪一整行是表头区”，<th>是填“每个格子里的标题字”，一个管地盘，一个管格子。 -->
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>关键词</th>
+                <th>趋势</th>
+                <th>进入搜索</th>
+                <th>最近七日</th>
+                <th>相关链接</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>鬼吹灯</td>
+                <td><img src="down.jpg"></td>
+                <td>456</td>
+                <td>123</td>
+                <td> <a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>鬼吹灯</td>
+                <td><img src="down.jpg"></td>
+                <td>456</td>
+                <td>123</td>
+                <td> <a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>西游记</td>
+                <td><img src="up.jpg"></td>
+                <td>456</td>
+                <td>123</td>
+                <td> <a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>鬼吹灯</td>
+                <td><img src="down.jpg"></td>
+                <td>456</td>
+                <td>123</td>
+                <td> <a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>鬼吹灯</td>
+                <td><img src="down.jpg"></td>
+                <td>456</td>
+                <td>123</td>
+                <td> <a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>鬼吹灯</td>
+                <td><img src="down.jpg"></td>
+                <td>456</td>
+                <td>123</td>
+                <td> <a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

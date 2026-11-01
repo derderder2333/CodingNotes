@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子模型之外边距margin</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .one {
+            margin-bottom: 20px;
+            /* 当两个盒子都有上下边距的时候，
+            你会发现他们有一部分是重合的 */
+        }
+
+        .two {
+            /* 一个值四边都一样,
+                两个值上下、左右，
+                三个值上、左右、下，
+                四个值上、右、下、左 */
+            /* margin-top: 20px; */
+            /* margin: 30px; */
+            margin: 30px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">1</div>
+    <div class="two">2</div>
+</body>
+
+</html>

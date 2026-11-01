@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS文本外观之装饰文本</title>
+    <style>
+       div {
+           /* 下划线 */
+           /* text-decoration: underline;   */
+         /* 删除线 */
+           text-decoration: line-through;
+           /* 上划线 */
+           text-decoration: overline;
+           /* 新覆盖旧：
+           同一个属性编辑两次使用最新编辑的
+           比如说上面line-through跟overline都编辑了
+           ,默认使用最新的overline */
+
+       }
+       a {
+           /* 取消a默认的下划线 */
+           text-decoration: none;
+           color: #333;
+       }
+    </style>
+</head>
+<body>
+    <!--css的文本外观修饰效果和文本格式化标签差不多，在需要固定效果的时候可以直接用标签，
+     但是如果想要灵活的互动，用css比较灵活方便 -->
+    <div>粉红色的回忆</div>
+    <a href="#">粉红色的回忆</a>
+</body>
+</html>

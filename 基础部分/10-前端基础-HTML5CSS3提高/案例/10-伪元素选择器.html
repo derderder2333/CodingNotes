@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪元素选择器before和after</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        /* 新建的伪元素在默认状态下是行内元素 */
+        /* before是在父元素内容的前面创建,
+        after是在父元素内容的后面创建 */
+        /* div::before 权重是2 */
+        div::before {
+            /* 这个content是必须要写的！！！！！！ */
+
+            /* display: inline-block; */
+            content: '我';
+            /* width: 30px;
+            height: 40px;
+            background-color: purple; */
+        }
+
+        div::after {
+            content: '小猪佩奇';
+        }
+
+        /* first-letter跟first-line只对块级元素生效 */
+        p::first-letter {
+            font-size: 2em;
+            color: #f00;
+        }
+
+        p::first-line {
+            color: #f00;
+        }
+
+        /* ::selection 选择器用于设置用户选中文本时的样式 */
+        ::selection {
+            background: yellow;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div> 是</div>
+    <!-- 沉浸式翻译插件有时候会注入一些意想不到的理论之外的文字把插件关掉就好了 -->
+    <p>这是一个段落。</p>
+</body>
+
+</html>

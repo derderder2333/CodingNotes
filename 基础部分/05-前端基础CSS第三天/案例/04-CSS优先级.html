@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS优先级</title>
+    <style>
+        /* 通配符和继承权重为0, 
+       标签选择器为1,
+       类(伪类)选择器为 10, 
+       id选择器 100, 
+       行内样式表为 1000, 
+       !important 无穷大 */
+        /* 复合选择器，则会有权重叠加，需要计算权重 */
+        .test {
+            color: red;
+        }
+
+        div {
+            color: pink !important;
+        }
+
+        #demo {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test" id="demo" style="color: purple">你笑起来真好看</div>
+</body>
+
+</html>
